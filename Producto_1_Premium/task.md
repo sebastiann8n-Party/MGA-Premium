@@ -1,0 +1,22 @@
+# Tareas: Sistema Generador DOCX APA (Local-First Premium)
+
+- [ ] **Fase 1: Estructura y Gobernanza**
+    - [x] Configuración de directorios `Documentosprofesionales/` (backend, software, salida)
+    - [ ] Definición de Gobernanza Local (`.agent/agente.md`) con enfoque Local-First
+    - [ ] Plan de Implementación Detallado (Matriz APA + FinOps)
+- [ ] **Fase 2: Capa de Inteligencia (Backend/AI)**
+    - [x] Implementación de cliente Gemini (`google.generativeai`)
+    - [x] Diseño de Prompt de Extracción (JSON Estructurado)
+    - [x] Configuración de manejo de errores API (Tenacity/Async)
+- [ ] **Fase 3: Capa de Validación (Backend/Logic)**
+    - [x] Definición de Esquemas Pydantic (`CitationData`)
+    - [x] Lógica de mapeo APA 7 (Autores, Fechas, Títulos, Fuentes)
+    - [x] Validadores de integridad de datos
+- [ ] **Fase 4: Capa de Renderizado (Software/Engine)**
+    - [x] Implementación de `APADocBuilder` (Márgenes, Fuentes, Paginación XML)
+    - [x] Gestión de estilos tipográficos (Cursivas, Negritas, Sangrías Francesas)
+    - [x] Pipeline de ensamblaje (Portada -> Cuerpo -> Referencias)
+- [ ] **Fase 5: Verificación y Entrega**
+    - [ ] Tests de Validación Human-in-the-Loop
+    - [ ] Generación de documentos de prueba
+    - [ ] Optimización de costos (verificación de tokens)
